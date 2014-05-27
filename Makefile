@@ -2,7 +2,7 @@
 
 PATH := $(PATH):$(shell pwd)/crosstool/bin
 
-CROSSTOOL=crosstool-ng-1.19.0
+CROSSTOOL=crosstool-ng-1.19.3
 
 all: buildroot
 
@@ -29,7 +29,7 @@ all: buildroot
 	touch .installed_xtools
 
 buildroot-a13-olinuxino:
-	git clone git://github.com/mireq/buildroot-a13-olinuxino
+	git clone git://github.com/saffari/buildroot-a13-olinuxino
 
 .configured_buildroot: buildroot-a13-olinuxino .installed_xtools
 	cat buildroot-a13-olinuxino/configs/a13_olinuxino_defconfig > buildroot-a13-olinuxino/configs/a13_olinuxino_crossng_defconfig
