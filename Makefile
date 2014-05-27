@@ -7,7 +7,7 @@ CROSSTOOL=crosstool-ng-1.19.3
 all: buildroot
 
 .downloaded_ct_ng:
-	wget -c http://crosstool-ng.org/download/crosstool-ng/${CROSSTOOL}.tar.bz2
+	wget -c http://crosstool-ng.org/download/crosstool-ng/crosstool-ng-1.9.3.tar.bz2 #http://crosstool-ng.org/download/crosstool-ng/${CROSSTOOL}.tar.bz2
 	touch .downloaded_ct_ng
 
 .extracted_ct_ng: .downloaded_ct_ng
